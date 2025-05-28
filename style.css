@@ -1,0 +1,64 @@
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #003f5c;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.sidebar a:hover {
+    background-color: #2d4f68;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.appointments-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
