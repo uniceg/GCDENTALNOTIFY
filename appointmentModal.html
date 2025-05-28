@@ -1,0 +1,47 @@
+<!-- Appointment Reason Modal -->
+<div class="modal fade" id="appointmentReasonModal" tabindex="-1" aria-labelledby="appointmentReasonModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+      <form id="appointmentReasonForm" autocomplete="off">
+        <div class="modal-header bg-primary bg-gradient text-white border-0 rounded-top">
+          <h5 class="modal-title" id="appointmentReasonModalLabel">
+            <i class="bi bi-calendar-plus me-2"></i>Book Appointment
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pb-0">
+          <div class="d-flex align-items-center mb-3 p-2 rounded" style="background: #f6faff;">
+            <div class="doctor-avatar flex-shrink-0 me-3" style="width:48px;height:48px;border-radius:50%;background:#e3f0fc;display:flex;align-items:center;justify-content:center;">
+              <i class="bi bi-person-circle fs-2 text-primary"></i>
+            </div>
+            <div>
+              <div class="fw-semibold" id="modalDoctorName"></div>
+              <div class="small text-muted" id="modalDoctorSpecialization"></div>
+            </div>
+          </div>
+          <div class="row g-2 mb-3">
+            <div class="col-6">
+              <div class="form-label mb-1"><i class="bi bi-calendar-event me-1"></i>Date</div>
+              <div class="form-control-plaintext ps-2" id="modalAppointmentDate"></div>
+            </div>
+            <div class="col-6">
+              <div class="form-label mb-1"><i class="bi bi-clock me-1"></i>Time</div>
+              <div class="form-control-plaintext ps-2" id="modalAppointmentTime"></div>
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="modalAppointmentReason" class="form-label">Reason for Appointment</label>
+            <textarea class="form-control" id="modalAppointmentReason" rows="3" maxlength="200" required placeholder="Describe your reason (max 200 chars)"></textarea>
+            <div class="invalid-feedback">Please enter a reason.</div>
+            <div class="form-text text-end"><span id="reasonCharCount">0</span>/200</div>
+          </div>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="submit" class="btn btn-primary w-100 py-2 fs-5">
+            <i class="bi bi-check-circle me-2"></i>Confirm Booking
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
